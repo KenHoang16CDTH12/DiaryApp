@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hueic.kenhoang.diaryapp.activity.NewNoteActivity">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myToolbar"
+    android:background="#64dd17"></android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgAttach"
+        android:layout_below="@+id/myToolbar"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="Title :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/imgAttach"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTitle"
+        android:hint="Note title"
+        android:layout_below="@+id/imgAttach"
+        android:layout_toRightOf="@+id/tvTitle"
+        android:layout_marginLeft="10dp" />
+    <requestFocus/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edContent"
+        android:hint="Content of note"
+        android:layout_below="@+id/edTitle"
+        android:inputType="text"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>
